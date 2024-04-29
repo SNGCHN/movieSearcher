@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #0d101e;
+}
+
+header {
+  background-color: #181b2a;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+
+#title {
+  letter-spacing: 50px;
+  font-size: 120px;
+  color: white;
+  padding-top: 90px;
+  cursor: pointer;
+}
+
+#search-form {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#search-input {
+  width: 600px;
+  height: 45px;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+#search-btn {
+  width: 100px;
+  height: 45px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+section {
+  height: 100%;
+  display: flex;
+}
+
+#movie-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 70px;
+  padding: 50px;
+}
+
+.movie-element {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #252a41;
+  border-radius: 10px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.movie-element img {
+  width: 100%;
+  display: block;
+}
+
+.movie-element h3,
+p,
+span {
+  padding: 20px;
+  color: white;
+}
+
+.movie-element h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.movie-element span {
+  font-weight: bold;
+  color: darkcyan;
+  background-color: #1a1f33;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.movie-element p {
+  min-height: 300px;
+}
