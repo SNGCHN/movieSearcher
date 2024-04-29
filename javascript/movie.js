@@ -6,10 +6,10 @@ const options = {
   },
 };
 
-// 전역 변수로 영화 데이터를 저장
+// 영화 데이터를 저장하는 변수
 let movies = [];
 
-// 페이지 리로드
+// 타이틀을 눌렀을 시, 페이지 리로드
 document.getElementById('title').addEventListener('click', function () {
   location.reload();
 });
@@ -44,11 +44,9 @@ function displayMovies(movies) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', fetchMovies);
-
 // 자동으로 검색에 커서 위치 시키기
 document.addEventListener('DOMContentLoaded', () => {
-  fetchMovies();
+  fetchMovies(); // 영화 데이터 불러오기
   document.getElementById('search-input').focus();
 });
 
